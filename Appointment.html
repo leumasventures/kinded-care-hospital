@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book an appointment | Kinded Care Hospital and Maternity, Aba</title>
+<meta name="description" content="Request an appointment at Kinded Care Hospital and Maternity, Aba.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">Kinded Care Hospital and Maternity<small>Caring for Mother and Child</small></a><nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a class="cta" href="appointment.html" aria-current="page">Book appointment</a></nav></div></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Book an appointment</h1><p>Tell us what you need and when. We will confirm by phone.</p></div></div>
+<section><div class="wrap"><form id="f"><label>Full name<input name="n" required autocomplete="name"></label>
+<label>Phone number<input name="p" type="tel" required autocomplete="tel"></label>
+<label>Service<select name="s" required><option value="">Choose a service</option><option>Antenatal care</option><option>Delivery</option><option>Postnatal care</option><option>Immunization</option><option>Family planning</option><option>Paediatrics</option><option>General medicine</option><option>Laboratory</option><option>Ultrasound scan</option></select></label>
+<label>Preferred date<input name="d" type="date" required></label>
+<label>Notes (optional)<textarea name="m" rows="4"></textarea></label>
+<button class="btn" type="submit">Request on WhatsApp</button>
+<p class="note">This opens WhatsApp with your request ready to send. For emergencies, call <a href="tel:+2347047813549">+234 704 781 3549</a> instead.</p></form></div></section>
+<script>var f=document.getElementById("f");f.d.min=new Date().toISOString().slice(0,10);f.addEventListener("submit",function(e){e.preventDefault();var d=new FormData(f);var t="Appointment request\nName: "+d.get("n")+"\nPhone: "+d.get("p")+"\nService: "+d.get("s")+"\nDate: "+d.get("d")+(d.get("m")?"\nNotes: "+d.get("m"):"");window.open("https://wa.me/2347047813549?text="+encodeURIComponent(t),"_blank")})</script>
+</main>
+<footer><div class="wrap"><p><strong>Kinded Care Hospital and Maternity</strong></p>
+<p>21C Co-operative Street, Off Crystal Park Hotel, Aba, Abia State</p>
+<p><a href="tel:+2347047813549">+234 704 781 3549</a> · <a href="mailto:kindedcarehospital@gmail.com">kindedcarehospital@gmail.com</a></p>
+<p>© <span id="y">2026</span> Kinded Care Hospital and Maternity. Caring for Mother and Child.</p></div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body></html>

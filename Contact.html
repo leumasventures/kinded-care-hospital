@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Kinded Care Hospital and Maternity, Aba</title>
+<meta name="description" content="Address, phone and email for Kinded Care Hospital and Maternity, Aba.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">Kinded Care Hospital and Maternity<small>Caring for Mother and Child</small></a><nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html" aria-current="page">Contact</a><a class="cta" href="appointment.html">Book appointment</a></nav></div></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Contact us</h1><p>We are in Aba, Abia State.</p></div></div>
+<section><div class="wrap two"><div><dl><dt>Address</dt><dd>21C Co-operative Street, Off Crystal Park Hotel, Aba, Abia State</dd>
+<dt>Phone</dt><dd><a href="tel:+2347047813549">+234 704 781 3549</a></dd>
+<dt>Email</dt><dd><a href="mailto:kindedcarehospital@gmail.com">kindedcarehospital@gmail.com</a></dd>
+<dt>Emergencies</dt><dd>Emergency and ambulance services, 24/7. Call the number above.</dd></dl>
+<a class="btn" href="https://wa.me/2347047813549">Message on WhatsApp</a></div>
+<div><h2>Send a message</h2><form id="f"><label>Your name<input name="n" required autocomplete="name"></label>
+<label>Phone number<input name="p" type="tel" required autocomplete="tel"></label>
+<label>Message<textarea name="m" rows="5" required></textarea></label>
+<button class="btn" type="submit">Send on WhatsApp</button><p class="note">This opens WhatsApp with your message ready to send.</p></form></div></div></section>
+<script>document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var d=new FormData(this);var t="Hello Kinded Care,\n"+d.get("m")+"\n\nName: "+d.get("n")+"\nPhone: "+d.get("p");window.open("https://wa.me/2347047813549?text="+encodeURIComponent(t),"_blank")})</script>
+</main>
+<footer><div class="wrap"><p><strong>Kinded Care Hospital and Maternity</strong></p>
+<p>21C Co-operative Street, Off Crystal Park Hotel, Aba, Abia State</p>
+<p><a href="tel:+2347047813549">+234 704 781 3549</a> · <a href="mailto:kindedcarehospital@gmail.com">kindedcarehospital@gmail.com</a></p>
+<p>© <span id="y">2026</span> Kinded Care Hospital and Maternity. Caring for Mother and Child.</p></div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body></html>
